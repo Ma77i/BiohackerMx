@@ -1,0 +1,960 @@
+:root {
+	--main-bg-color: #f8fcf6;
+	--secondary-bg-color: #fafafa;
+	--primary-bg-btn: #0d573e;
+	--primary-text-color: #765d9b;
+	--secondary-text-color: #4c5a50;
+	--third-text-color: #fafafa;
+	--hover: #2f3330;
+}
+
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+/* BOTONES */
+
+.btn-grad {
+	background: linear-gradient(0.25turn, #084631, #138760);
+	padding: 15px 45px;
+	text-align: center;
+	font-weight: 500;
+	font-family: "Poppins", sans-serif;
+	color: white !important;
+	border-radius: 13px;
+	display: block;
+	border: none;
+	min-height: 56px;
+	min-width: 275px;
+	font-size: 17px;
+}
+
+.btn-grad:hover {
+	background: #138760;
+}
+
+/* .btn-grad:focus {
+	box-shadow: 1px;
+	color: blue;
+} */
+
+/*----------- GENERAL -----------*/
+.secciones {
+	color: var(--primary-text-color) !important;
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 400;
+	font-family: "Poppins", sans-serif;
+}
+
+a {
+	text-decoration: none !important;
+	color: white !important;
+}
+
+.selected {
+	font-weight: 500;
+}
+
+.bg-color {
+	color: #f8fcf6 !important;
+}
+
+nav li {
+	margin-left: 16px;
+}
+
+footer {
+	border-top: 2px solid #4c5a50;
+}
+
+h2 {
+	font-family: "Poppins", sans-serif;
+	font: size 34px;
+	font-weight: 600;
+	color: var(--primary-text-color);
+	margin: 0% ;
+}
+
+/*-------------------------------------------------------------------------------------- MOBILE -----------*/
+@media (max-width: 576px) {
+	/*FOOTER*/
+
+	.pie {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		align-items: center;
+		padding: 40px 80px;
+	}
+
+	.pie__img {
+		height: 100px;
+	}
+
+	.pie__img img {
+		height: 100px;
+		width: auto;
+	}
+
+	.pie__izquierda {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.pie__izquierda--redes {
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
+	}
+
+	.pie__izquierda--redes a {
+		margin-left: 10px;
+		margin-right: 10px;
+		height: 60px;
+	}
+
+	.pie__izquierda--redes a img {
+		height: inherit;
+	}
+
+	footer {
+		background-color: var(--main-bg-color);
+	}
+
+	footer a img {
+		height: inherit;
+	}
+
+	footer p {
+		text-align: center;
+		margin-top: 30px;
+		font-size: 16px;
+		color: var(--secondary-text-color);
+	}
+
+	/* INDEX */
+
+	.fondo__desktop, .fondo__tablet {
+		display: none;
+	}
+
+	.foto1__desktop, .foto1__tablet  {
+		display: none;
+	}
+
+	.eBook__desktop, .eBook__tablet {
+		display: none;
+	}
+
+	.introParrafo {
+		color: white;
+		font-family: "Poppins", sans-serif;
+		font-weight: 700;
+		width: 50%;
+		position: absolute;
+		top: 60%;
+		margin-left: 5%;
+	}
+
+	.introParrafo__uno {
+		font-size: 8rem;
+		line-height: 5.5rem;
+	}
+
+	.introParrafo__dos {
+		font-size: 3rem;
+	}
+
+	.introParrafo__tres {
+		font-size: 1.5rem;
+	}
+
+	.contenedor__soyBio {
+		display: flex;
+		flex-direction: column;
+		margin: 3%;
+	}
+
+	.contenedor__soyBio--texto {
+		font-family: "Poppins", sans-serif;
+		margin: 2%;
+	}
+
+	.contenedor__soyBio--texto h2 {
+		font-weight: 700;
+	}
+
+	.contenedor__soyBio--texto p {
+		font-size: 1.3rem;
+	}
+
+	.contenedor__eBook {
+		margin: 3%;
+		font-family: "Poppins", sans-serif;
+	}
+
+	.contenedor__eBook p {
+		width: 100%;
+	}
+
+	/* --------------------------------------------------SOBRE MI---- */
+	
+	.foto2SobreMi__desktop, .foto2SobreMi__tablet {
+		display: none;
+	}
+
+	.sobreMi__Parrafo {
+		font-family: "Poppins", sans-serif;
+		font-size: 22px;
+		font-weight: bold;
+		width: 76%;
+		position: absolute;
+		top: 15%;
+		text-align: center;
+		margin: 0% 12%;
+	}
+
+	.contenedor__sobreMi {
+		font-family: "Poppins", sans-serif;
+		margin: 8% 5%;
+	}
+
+	.caja__redes {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		text-align: center;
+	}
+
+	.foto2SobreMi__desktop {
+		display: none;
+	}
+
+	.contenedor__biohuman {
+		font-family: "Poppins", sans-serif;
+		margin: 5%;
+	}
+
+	.contenedor__biohuman h2 {
+		margin: 2%;
+	}
+
+	.contenedor__biohuman p {
+		margin: 2%;
+		font-size: 400;
+	}
+
+	/* -------------------------------------------------BIOHACKING------- */
+	.foto__BioDos--desktop, .foto__BioDos--tablet {
+		display: none;
+	}
+
+	.eBook__desktop {
+		display: none;
+	}
+
+	.biohacking__Parrafo {
+		color: #ffffff;
+		font-family: "Poppins", sans-serif;
+		font-size: 20px;
+		font-weight: bold;
+		width: 90%;
+		position: absolute;
+		top: 90%;
+		left: 5%;
+		text-align: center;
+	}
+
+	.contenedor__biohacking {
+		font-family: "Poppins", sans-serif;
+		margin: 5%;
+	}
+
+	.contenedor__bio--comoComenzar {
+		display: flex;
+	}
+
+	.comoComenzar__num {
+		color: #765d9b;
+		font-weight: 600;
+		font-size: 120px;
+		width: 25%;
+	}
+
+	.comoComenzar__tex {
+		color: #4C5A50;
+		display: flex;
+		align-items: center;
+		font-size: 24px;
+		font-weight: 400;
+		width: 70%;
+	}
+
+	.contenedor__biohacking--comoComenzar p {
+		margin: 1%;
+	}
+
+	.contenedor__biohacking--comoComenzar p {
+		margin: 1%;
+	}
+
+	.sobreBiohacking {
+		font-family: "Poppins", sans-serif;
+		margin: 5%;
+	}
+
+	.foto__BioDos--responsive {
+		margin-bottom: 3%;
+	}
+
+	.contenedor__eBook--bio {
+		font-family: "Poppins", sans-serif;
+		margin: 5%;
+	}
+
+	.eBook__responsive {
+		margin-bottom: 3%;
+	}
+
+	/*RECOMENDACIONES*/
+
+	.reco {
+		margin: 5%;
+	}
+	.reco__foto--desktop, .reco__foto--tablet {
+		display: none;
+	}
+
+	.card-body {
+		font-family: "Poppins", sans-serif !important;
+	}
+
+	.card-title {
+		color: #4C5A50 !important;
+	}
+	/*CONTACTO*/
+}
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------ TABLET -----------*/
+@media (min-width: 576px) and (max-width: 992px) {
+	body {
+		background-color: #f70707;
+	}
+
+	/*FOOTER*/
+
+	.pie {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		align-items: center;
+		padding: 40px 80px;
+	}
+
+	.pie__img {
+		height: 160px;
+	}
+
+	.pie__img img {
+		height: 150px;
+		width: auto;
+	}
+
+	.pie__izquierda {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.pie__izquierda--redes {
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
+	}
+
+	.pie__izquierda--redes a {
+		margin-left: 10px;
+		margin-right: 10px;
+		height: 60px;
+	}
+
+	.pie__izquierda--redes a img {
+		height: inherit;
+	}
+
+	footer {
+		background-color: var(--main-bg-color);
+	}
+
+	footer a img {
+		height: inherit;
+	}
+
+	footer p {
+		text-align: center;
+		margin-top: 30px;
+		font-size: 16px;
+		color: var(--secondary-text-color);
+	}
+
+
+	/* INDEX */
+	.fondo__desktop, .fondo__mobile {
+		display: none;
+	}
+
+	.foto1__desktop, .foto1__mobile  {
+		display: none;
+	}
+
+	.eBook__desktop, .eBook__mobile {
+		display: none;
+	}
+
+	.introParrafo {
+		font-family: "Roboto", sans-serif;
+		font-weight: 500;
+		width: 75%;
+		position: absolute;
+		top: 90%;
+		left: 5%;
+	}
+
+	.introParrafo__uno {
+		margin-left: -5px;
+		color: white;
+		font-size: 8rem;
+		line-height: 5.5rem;
+	}
+
+	.introParrafo__dos {
+		color: white;
+		font-size: 3rem;
+	}
+
+	.introParrafo__tres {
+		color: white;
+		font-size: 34px;
+		font-family: "Roboto", sans-serif;
+		font-weight: 500;
+		line-height: 38px;
+	}
+
+	.contenedor__soyBio {
+		display: flex;
+		flex-direction: row;
+		margin: 5%;
+	}
+
+	.contenedor__soyBio--texto {
+		margin: 2%;
+	}
+
+	.contenedor__eBook {
+		margin: 5%;
+	}
+
+	.contenedor__eBook p {
+		width: 40%;
+		margin-top: 1%;
+	}
+
+
+
+	p {
+		font-family: "Poppins", sans-serif;
+		font-size: 20px;
+		color: var(--secondary-text-color);
+	}
+
+	/* SOBRE MI */
+
+	.foto2SobreMi__desktop, .foto2SobreMi__mobile {
+		display: none;
+	}
+
+	.contenedor__sobreMi {
+		color: #4c5a50;
+		font-family: "Poppins", sans-serif;
+		font-weight: 400;
+		font-size: 18px;
+		margin: 5% 3%;
+	}
+	
+	.contenedor__sobreMi h2 {
+		margin: 0% 2%;
+	}
+
+
+	.sobreMi__caja {
+		display: flex;
+	}
+
+	.contenedor__sobreMi--texto, .contenedor__sobreMi--redes {
+		margin: 0% 2%;
+		width: 45%;
+	}
+
+	.caja__redes p {
+		color: #765d9b;
+		text-align: center;
+	}
+
+	.caja__redesSociales {
+		display: flex;
+		justify-content: center;
+	}
+
+	.foto2SobreMi__responsive {
+		display: none;
+	}
+
+	.contenedor__biohuman {
+		font-family: "Poppins", sans-serif;
+		margin: 5%;
+		display: flex;
+	}
+
+	.foto2SobreMi__desktop,
+	.contenedor__biohuman--texto {
+		width: 45%;
+		margin: 2%;
+	}
+
+	/* BIOHACKING */
+
+	.foto__BioDos--desktop, .foto__BioDos--mobile {
+		display: none;
+	}
+
+	.biohacking__Parrafo {
+		color: #ffffff;
+		font-family: "Poppins", sans-serif;
+		font-size: 26px;
+		font-weight: bold;
+		position: absolute;
+		text-align: center;
+		width: 70%;
+		left: 16px;
+		top: 100%;
+		margin: 0% 12%;
+	}
+
+	.contenedor__biohacking {
+		font-family: "Poppins", sans-serif;
+		font-weight: 400;
+		margin: 5%;
+	}
+
+	.contenedor__comoComenzar {
+		display: flex;
+	}
+
+	.contenedor__bio--comoComenzar {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 25%;
+	}
+
+	.comoComenzar__num {
+		color: #765d9b;
+		font-weight: 600;
+		font-size: 120px;
+	}
+
+	.comoComenzar__tex {
+		text-align: center;
+	}
+
+	.contenedor__biohacking--comoComenzar p {
+		margin: 1%;
+	}
+
+	.sobreBiohacking {
+		font-family: "Poppins", sans-serif;
+		margin: 3%;
+		display: flex;
+	}
+
+	.foto__BioDos--desktop {
+		width: 60%;
+		margin: 2%;
+	}
+	.sobreBio__text {
+		width: 35%;
+	}
+
+	.sobreBio__text {
+		font-family: "Poppins", sans-serif;
+		font-weight: 400;
+	}
+
+	.contenedor__eBook--bio {
+		display: flex;
+		margin: 3%;
+	}
+
+	.eBook__desktop {
+		margin: 2%;
+	}
+
+	.eBook__texto {
+		margin: 2.5% 0%;
+	}
+
+	/*RECOMENDACIONES*/
+	.reco__foto--desktop, .reco__foto--mobile {
+		display: none;
+	}
+	/*CONTACTO*/
+}
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------- D E S K T O P ---*/
+
+@media (min-width: 992px) {
+	/*-----------------------------------------------------------NAVBAR*/
+	.navbar {
+		padding: 0.5rem 3rem !important;
+	}
+
+	.selected {
+		border-top: 2px solid !important;
+		text-decoration-color: var(--primary-text-color);
+		padding: 6px !important;
+	}
+
+	/*-----------------------------------------------------------FOOTER*/
+
+	.pie {
+		display: flex;
+		height: auto;
+		justify-content: space-between;
+		padding: 40px 80px;
+	}
+
+	.pie__img {
+		height: 160px;
+	}
+
+	.pie__img img {
+		height: 150px;
+		width: auto;
+	}
+
+	.pie__izquierda {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+
+	.pie__izquierda--redes {
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 20px;
+	}
+
+	.pie__izquierda--redes a {
+		margin-left: 20px;
+		height: 60px;
+	}
+
+	.pie__izquierda--redes a img {
+		height: inherit;
+	}
+
+	footer {
+		background-color: var(--main-bg-color);
+		border-top: linear-gradient(0, red, white);
+	}
+
+	footer a img {
+		height: inherit;
+	}
+
+	footer p {
+		text-align: center;
+		margin-top: 30px;
+		font-size: 16px;
+		color: var(--secondary-text-color);
+	}
+
+	/* --------------------------------------------------------I N D E X---------------- */
+
+	.fondo__mobile, .fondo__tablet {
+		display: none;
+	}
+
+	.foto1__mobile, .foto1__tablet {
+		display: none;
+	}
+
+	.foto__BioDos--responsive {
+		display: none;
+	}
+
+	.eBook__mobile, .eBook__tablet {
+		display: none;
+	}
+
+	.contenedor__intro {
+		font-family: "Poppins", sans-serif;
+	}
+
+	.introParrafo {
+		font-family: "Roboto", sans-serif;
+		font-weight: 500;
+		width: 25%;
+		position: absolute;
+		top: 30%;
+		left: 20%;
+	}
+
+	.introParrafo__uno {
+		margin-left: -5px;
+		color: white;
+		font-size: 8rem;
+		line-height: 5.5rem;
+	}
+
+	.introParrafo__dos {
+		color: white;
+		font-size: 3rem;
+	}
+
+	.introParrafo__tres {
+		color: white;
+		font-size: 34px;
+		font-family: "Roboto", sans-serif;
+		font-weight: 500;
+		line-height: 38px;
+	}
+
+	.contenedor__soyBio {
+		display: flex;
+		flex-direction: row;
+		margin: 5%;
+	}
+
+	.contenedor__soyBio--texto {
+		margin: 2%;
+	}
+
+	.contenedor__eBook {
+		margin: 5%;
+	}
+
+	.contenedor__eBook p {
+		width: 40%;
+		margin-top: 1%;
+	}
+
+
+
+	p {
+		font-family: "Poppins", sans-serif;
+		font-size: 20px;
+		color: var(--secondary-text-color);
+	}
+
+	/* -------------------------------------------------------S O B R E - M I--------*/
+
+	.foto2SobreMi__tablet, .foto2SobreMi__mobile {
+		display: none;
+	}
+
+	.contenedor__sobreMi {
+		color: #4c5a50;
+		font-family: "Poppins", sans-serif;
+		font-weight: 400;
+		font-size: 18px;
+		margin: 5% 3%;
+	}
+	
+	.contenedor__sobreMi h2 {
+		margin: 0% 2%;
+	}
+
+
+	.sobreMi__caja {
+		display: flex;
+	}
+
+	.contenedor__sobreMi--texto, .contenedor__sobreMi--redes {
+		margin: 0% 2%;
+		width: 45%;
+	}
+
+	.caja__redes p {
+		color: #765d9b;
+		text-align: center;
+	}
+
+	.caja__redesSociales {
+		display: flex;
+		justify-content: center;
+	}
+
+	.foto2SobreMi__responsive {
+		display: none;
+	}
+
+	.contenedor__biohuman {
+		font-family: "Poppins", sans-serif;
+		margin: 5%;
+		display: flex;
+	}
+
+	.foto2SobreMi__desktop,
+	.contenedor__biohuman--texto {
+		width: 45%;
+		margin: 2%;
+	}
+
+
+	/* -------------------------------------------------------BIOHACKING----------- */
+
+	.foto__BioDos--mobile, .foto__BioDos--tablet {
+		display: none;
+	}
+
+	.biohacking__Parrafo {
+		color: #ffffff;
+		font-family: "Poppins", sans-serif;
+		font-size: 26px;
+		font-weight: bold;
+		position: absolute;
+		width: 40%;
+		left: 16px;
+		top: 80%;
+		margin: 0% 12%;
+	}
+
+	.contenedor__biohacking {
+		font-family: "Poppins", sans-serif;
+		font-weight: 400;
+		margin: 5%;
+	}
+
+	.contenedor__comoComenzar {
+		display: flex;
+	}
+
+	.contenedor__bio--comoComenzar {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 25%;
+	}
+
+	.comoComenzar__num {
+		color: #765d9b;
+		font-weight: 600;
+		font-size: 120px;
+	}
+
+	.comoComenzar__tex {
+		text-align: center;
+	}
+
+	.contenedor__biohacking--comoComenzar p {
+		margin: 1%;
+	}
+
+	.sobreBiohacking {
+		font-family: "Poppins", sans-serif;
+		margin: 3%;
+		display: flex;
+	}
+
+	.foto__BioDos--desktop {
+		width: 60%;
+		margin: 2%;
+	}
+	.sobreBio__text {
+		width: 35%;
+	}
+
+	.sobreBio__text {
+		font-family: "Poppins", sans-serif;
+		font-weight: 400;
+	}
+
+	.contenedor__eBook--bio {
+		display: flex;
+		margin: 3%;
+	}
+
+	.eBook__desktop {
+		margin: 2%;
+	}
+
+	.eBook__texto {
+		margin: 2.5% 0%;
+	}
+
+	/*RECOMENDACIONES*/
+
+	.reco__introParrafo {
+		color: #4c5a50;
+		font-family: "Poppins", sans-serif;
+		font-size: 35px;
+		font-weight: 600;
+		text-align: center;
+		width: 60%;
+		position: absolute;
+		top: 70%;
+		left: 20%;
+	}
+
+	.reco__foto--tablet, .reco__foto--mobile {
+		display: none;
+	}
+
+	.card-body {
+		font-family: "Poppins", sans-serif !important;
+	}
+
+	.card-title {
+		color: #4C5A50 !important;
+	}
+
+	.reco__tips {
+		display: flex;
+		margin: 5%;
+	}
+
+	/*CONTACTO*/
+
+	.contenedor__contacto {
+		display: flex;
+		font-family: "Poppins", sans-serif;
+	}
+}
