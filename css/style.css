@@ -4,7 +4,7 @@
 	--primary-bg-btn: #0d573e;
 	--primary-text-color: #765d9b;
 	--secondary-text-color: #4c5a50;
-	--third-text-color: #fafafa;
+	--third-text-color: #f8fcf6;
 	--hover: #2f3330;
 }
 
@@ -72,10 +72,72 @@ nav li {
 }
 
 footer {
-	border-top: 2px solid #4c5a50;
+	box-shadow: 0px -3px 6px 0px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0px -3px 6px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px -3px 6px 0px rgba(0, 0, 0, 0.3);
 }
 
+.shadow01 {
+	box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.3);
+	border-radius: 13px;
+	border: 1px solid #4c5a503f;
+}
 
+.parrafoCarrousel {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24px;
+	font-family: "Roboto", sans-serif;
+	color: var(--secondary-text-color);
+	text-align: left !important;
+}
+
+.lead {
+	height: -webkit-fill-available;
+	font-size: 1.25rem;
+	font-weight: 300;
+	display: flex;
+	flex-direction: column;
+	/* height: auto; */
+	justify-content: flex-start;
+}
+
+.item {
+	width: 376px;
+	height: 336px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pad15 {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	height: 350px !important;
+	background-color: var(--main-bg-color) !important;
+}
+
+.imgCarrousel {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	width: 80px;
+	height: 80px;
+	margin: 10px;
+}
+
+.item h5 {
+	color: var(--primary-text-color);
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 24px;
+	font-family: "Poppins", sans-serif;
+}
 
 /*-------------------------------------------------------------------------------------- MOBILE -----------*/
 @media (max-width: 576px) {
@@ -140,20 +202,23 @@ footer {
 		font: size 1.2rem;
 		font-weight: 700;
 		color: var(--primary-text-color);
-		margin: 0% ;
+		margin: 0%;
 	}
 
 	/*------------------------------------------------------ INDEX */
 
-	.fondo__desktop, .fondo__tablet {
+	.fondo__desktop,
+	.fondo__tablet {
 		display: none;
 	}
 
-	.foto1__desktop, .foto1__tablet  {
+	.foto1__desktop,
+	.foto1__tablet {
 		display: none;
 	}
 
-	.eBook__desktop, .eBook__tablet {
+	.eBook__desktop,
+	.eBook__tablet {
 		display: none;
 	}
 
@@ -210,8 +275,9 @@ footer {
 	}
 
 	/* --------------------------------------------------SOBRE MI---- */
-	
-	.foto2SobreMi__desktop, .foto2SobreMi__tablet {
+
+	.foto2SobreMi__desktop,
+	.foto2SobreMi__tablet {
 		display: none;
 	}
 
@@ -220,7 +286,8 @@ footer {
 		margin: 8% 5%;
 	}
 
-	.contenedor__sobreMi--texto, .contenedor__sobreMi--redes {
+	.contenedor__sobreMi--texto,
+	.contenedor__sobreMi--redes {
 		font-size: 1.1rem;
 	}
 
@@ -228,12 +295,27 @@ footer {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: space-around;
-		text-align: center;
+		padding: 3%;
 	}
 
 	.caja__redes p {
 		color: #765d9b;
+	}
+
+
+	.caja__redesSociales {
+		padding: 5% 1%;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.caja__redesSociales a {
+		
+		padding: 3% 3%;
+	}
+
+	.caja__redesSociales img{
+		width: 100%;
 	}
 
 	.foto2SobreMi__desktop {
@@ -259,8 +341,10 @@ footer {
 		margin: 2%;
 	}
 
+
 	/* -------------------------------------------------BIOHACKING------- */
-	.foto__BioDos--desktop, .foto__BioDos--tablet {
+	.foto__BioDos--desktop,
+	.foto__BioDos--tablet {
 		display: none;
 	}
 
@@ -287,7 +371,6 @@ footer {
 
 	.contenedor__bio--comoComenzar {
 		display: flex;
-		
 	}
 
 	.comoComenzar__num {
@@ -297,11 +380,10 @@ footer {
 		width: 25%;
 		padding-right: 1%;
 		text-align: center;
-
 	}
 
 	.comoComenzar__tex {
-		color: #4C5A50;
+		color: #4c5a50;
 		display: flex;
 		align-items: center;
 		font-size: 1.1rem;
@@ -309,7 +391,6 @@ footer {
 		width: 70%;
 		margin-left: 2%;
 	}
-
 
 	.contenedor__biohacking--comoComenzar p {
 		margin: 2%;
@@ -320,7 +401,8 @@ footer {
 		margin: 5%;
 	}
 
-	.sobreBio__text, .eBook__texto p {
+	.sobreBio__text,
+	.eBook__texto p {
 		font-size: 1.1rem;
 	}
 
@@ -347,8 +429,10 @@ footer {
 		margin: 5% 0%;
 	}
 
-	.reco__foto--desktop, .reco__foto--tablet, 
-	.foto__tips--desktop, .foto__tips--tablet {
+	.reco__foto--desktop,
+	.reco__foto--tablet,
+	.foto__tips--desktop,
+	.foto__tips--tablet {
 		display: none;
 	}
 
@@ -398,18 +482,10 @@ footer {
 	}
 }
 
-
-
-
-
-
-
-
-
 /*------------------------------------------------------------------------------------------------ TABLET -----------*/
 @media (min-width: 576px) and (max-width: 992px) {
 	body {
-		background-color: #f70707;
+		background-color: #ffffff;
 	}
 
 	/*FOOTER*/
@@ -473,47 +549,51 @@ footer {
 		font: size 34px;
 		font-weight: 700;
 		color: var(--primary-text-color);
-		margin: 0% ;
+		margin: 0%;
 	}
 
-
-	/* INDEX */
-	.fondo__desktop, .fondo__mobile {
+	/*--------------------------------------- INDEX */
+	.fondo__desktop,
+	.fondo__mobile {
 		display: none;
 	}
 
-	.foto1__desktop, .foto1__mobile  {
+	.foto1__desktop,
+	.foto1__mobile {
 		display: none;
 	}
 
-	.eBook__desktop, .eBook__mobile {
+	.eBook__desktop,
+	.eBook__mobile {
 		display: none;
 	}
 
 	.introParrafo {
 		font-family: "Roboto", sans-serif;
-		font-weight: 500;
-		width: 75%;
+		width: 56%;
 		position: absolute;
-		top: 90%;
+		top: 80%;
 		left: 5%;
 	}
 
 	.introParrafo__uno {
 		margin-left: -5px;
+		margin-bottom: 0%;
 		color: white;
 		font-size: 8rem;
+		font-weight: 700;
 		line-height: 5.5rem;
 	}
 
 	.introParrafo__dos {
 		color: white;
 		font-size: 3rem;
+		font-weight: 700;
 	}
 
 	.introParrafo__tres {
 		color: white;
-		font-size: 34px;
+		font-size: 26px;
 		font-family: "Poppins", sans-serif;
 		font-weight: 500;
 		line-height: 38px;
@@ -522,7 +602,7 @@ footer {
 	.contenedor__soyBio {
 		display: flex;
 		flex-direction: row;
-		margin: 5%;
+		margin: 10% 5%;
 	}
 
 	.contenedor__soyBio--texto {
@@ -530,15 +610,13 @@ footer {
 	}
 
 	.contenedor__eBook {
-		margin: 5%;
+		margin: 10% 5%;
 	}
 
 	.contenedor__eBook p {
 		width: 80%;
-		margin-top: 1%;
+		margin: 3% 0.5%;
 	}
-
-
 
 	p {
 		font-family: "Poppins", sans-serif;
@@ -548,7 +626,8 @@ footer {
 
 	/* -----------------------------------------------------SOBRE MI */
 
-	.foto2SobreMi__desktop, .foto2SobreMi__mobile {
+	.foto2SobreMi__desktop,
+	.foto2SobreMi__mobile {
 		display: none;
 	}
 
@@ -556,32 +635,56 @@ footer {
 		color: #4c5a50;
 		font-family: "Poppins", sans-serif;
 		font-weight: 400;
-		font-size: 18px;
-		margin: 5% 3%;
+		margin: 10% 3%;
 	}
-	
+
 	.contenedor__sobreMi h2 {
 		margin: 0% 2%;
 	}
-
 
 	.sobreMi__caja {
 		display: flex;
 	}
 
-	.contenedor__sobreMi--texto, .contenedor__sobreMi--redes {
+	.soyBio__sub2 {
+		font-size: 20px;
+		line-height: 1.4rem;
+	}
+
+	.soyBio__sub {
+		font-size: 16px;
+		line-height: 1.4rem;
+	}
+
+	.contenedor__sobreMi--texto,
+	.contenedor__sobreMi--redes {
+		
 		margin: 0% 2%;
 		width: 45%;
 	}
 
+	.caja__redes {
+		padding: 10% 3%;
+		margin-top: 20%;
+	}
+
 	.caja__redes p {
 		color: #765d9b;
-		text-align: center;
 	}
 
 	.caja__redesSociales {
+		padding-bottom: 20%;
 		display: flex;
-		justify-content: center;
+		justify-content: space-around;
+	}
+
+	.caja__redesSociales a {
+		
+		padding: 8% 3%;
+	}
+
+	.caja__redesSociales img{
+		width: 100%;
 	}
 
 	.foto2SobreMi__responsive {
@@ -590,7 +693,7 @@ footer {
 
 	.contenedor__biohuman {
 		font-family: "Poppins", sans-serif;
-		margin: 5%;
+		margin: 10% 3%;
 		display: flex;
 	}
 
@@ -601,16 +704,18 @@ footer {
 	}
 
 	.contenedor__biohuman--texto {
-		padding-top: 5%;
+		padding-top: 2%;
 	}
 
 	/*--------------------------------------------------BIOHACKING */
 
-	.foto__BioDos--desktop, .foto__BioDos--mobile {
+	.foto__BioDos--desktop,
+	.foto__BioDos--mobile {
 		display: none;
 	}
 
-	.eBook__desktop, .eBook__mobile {
+	.eBook__desktop,
+	.eBook__mobile {
 		display: none;
 	}
 
@@ -618,7 +723,7 @@ footer {
 		color: #ffffff;
 		font-family: "Poppins", sans-serif;
 		font-size: 26px;
-		font-weight: 700;
+		font-weight: 600;
 		position: absolute;
 		text-align: center;
 		width: 70%;
@@ -637,12 +742,18 @@ footer {
 		justify-content: center;
 	}
 
+	.contenedor__biohuman--texto p {
+		line-height: 1.6rem;
+	}
 	.contenedor__biohacking--texto h2 {
 		text-align: center;
 	}
 
 	.contenedor__comoComenzar {
 		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		padding: 0% 0%;
 	}
 
 	.contenedor__bio--comoComenzar {
@@ -656,10 +767,14 @@ footer {
 		color: #765d9b;
 		font-weight: 600;
 		font-size: 120px;
+		line-height: 7.5rem;
+		margin: 0%;
 	}
 
 	.comoComenzar__tex {
 		text-align: center;
+		font-size: 17px;
+		line-height: 1.4rem;
 	}
 
 	.contenedor__biohacking--comoComenzar p {
@@ -679,13 +794,26 @@ footer {
 	}
 	.sobreBio__text {
 		width: 50%;
-		font-size: 1rem;
-	}
-
-	.sobreBio__text {
 		font-family: "Poppins", sans-serif;
 		font-weight: 400;
 	}
+
+	.sobreBio__text h2 {
+		font-weight: 600;
+		font-size: 1.8rem;
+	}
+	.sobreBio__text p {
+		font-size: 17px;
+		line-height: 1.4rem;
+		margin-bottom: 4%;
+	}
+
+	.parrafoCarrousel {
+		font-family: "Poppins", sans-serif;
+		font-size: 1rem;
+		line-height: 1.4rem;
+	}
+
 
 	.contenedor__eBook--bio {
 		display: flex;
@@ -697,12 +825,23 @@ footer {
 	}
 
 	.eBook__texto {
-		margin: 2.5% 0%;
+		margin: 5% 0%;
 	}
 
-	/*RECOMENDACIONES*/
+	.eBook__texto h2 {
+		font-weight: 600;
+		font-size: 1.8rem;
+	}
+	.eBook__texto p {
+		font-size: 1rem;
+		line-height: 1.4rem;
+		margin-bottom: 4%;
+	}
+	/*----------------------------------------RECOMENDACIONES*/
 
-	.reco__foto--desktop, .reco__foto--mobile, .foto__tips--desktop {
+	.reco__foto--desktop,
+	.reco__foto--mobile,
+	.foto__tips--desktop {
 		display: none;
 	}
 
@@ -712,6 +851,11 @@ footer {
 		font-weight: 700;
 		text-align: center;
 		margin: 5% 0%;
+	}
+
+
+	.fila__img, .fila__text {
+		width: 50%;
 	}
 
 	.reco__tips {
@@ -747,33 +891,45 @@ footer {
 		font-size: 1.1rem;
 		padding-left: 5%;
 	}
-	
-	
+
 	/*-------------------------------------------------CONTACTO*/
 
-	.contenedor__contacto--texto {
-		margin: 5%;
+	.contenedor__contacto--titulo {
+		font-family: "Poppins", sans-serif;
+		font-weight: 700;
 	}
 
-	.contenedor__contacto--texto p {
-		font-family: "Poppins", sans-serif;
-		font-size: 1.1rem;
-		font-weight: 400;
+	.contenedor__contacto--texto {
+		margin: 3% 5%;
 	}
 }
-
-
-
-
-
-
-
-
-
 
 /*---------------------------------------------------------------------------------------------------- D E S K T O P ---*/
 
 @media (min-width: 992px) {
+	/*-----------------------------------------------------------GENERAL*/
+	.parrafos {
+		font-family: "Poppins", sans-serif;
+		font-size: 20px;
+		line-height: 24px;
+		color: var(--secondary-text-color);
+	}
+
+	.parrafosPpal {
+		font-family: "Poppins", sans-serif;
+		font-size: 22px;
+		color: var(--secondary-text-color);
+		line-height: 24px;
+	}
+
+	.titular {
+		font-family: "Poppins", sans-serif;
+		font-size: 34px;
+		color: white;
+		line-height: 37px;
+		font-weight: 600;
+	}
+
 	/*-----------------------------------------------------------NAVBAR*/
 	.navbar {
 		padding: 0.5rem 3rem !important;
@@ -845,16 +1001,18 @@ footer {
 		font: size 34px;
 		font-weight: 700;
 		color: var(--primary-text-color);
-		margin: 0% ;
+		margin: 0%;
 	}
 
 	/* --------------------------------------------------------I N D E X---------------- */
 
-	.fondo__mobile, .fondo__tablet {
+	.fondo__mobile,
+	.fondo__tablet {
 		display: none;
 	}
 
-	.foto1__mobile, .foto1__tablet {
+	.foto1__mobile,
+	.foto1__tablet {
 		display: none;
 	}
 
@@ -862,7 +1020,8 @@ footer {
 		display: none;
 	}
 
-	.eBook__mobile, .eBook__tablet {
+	.eBook__mobile,
+	.eBook__tablet {
 		display: none;
 	}
 
@@ -873,7 +1032,7 @@ footer {
 	.introParrafo {
 		font-family: "Poppins", sans-serif;
 		font-weight: 500;
-		width: 25%;
+		width: 50%;
 		position: absolute;
 		top: 30%;
 		left: 20%;
@@ -921,10 +1080,8 @@ footer {
 		margin-top: 1%;
 	}
 
-	.soyBio__sub {
-		font-family: "Poppins", sans-serif;
-		font-size: 20px;
-		color: var(--secondary-text-color);
+	.contenedor__sobreMi--titulo {
+		padding-bottom: 10px;
 	}
 
 	p {
@@ -935,7 +1092,15 @@ footer {
 
 	/* -------------------------------------------------------S O B R E - M I--------*/
 
-	.foto2SobreMi__tablet, .foto2SobreMi__mobile {
+	.contenedor__biohuman {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--third-text-color);
+	}
+
+	.foto2SobreMi__tablet,
+	.foto2SobreMi__mobile {
 		display: none;
 	}
 
@@ -946,29 +1111,41 @@ footer {
 		font-size: 18px;
 		margin: 5% 3%;
 	}
-	
-	.contenedor__sobreMi h2 {
-		margin: 0% 2%;
-	}
 
+	.contenedor__sobreMi h2 {
+		margin: 0% 0% 0% 2%;
+	}
 
 	.sobreMi__caja {
 		display: flex;
 	}
 
-	.contenedor__sobreMi--texto, .contenedor__sobreMi--redes {
-		margin: 0% 2%;
+	.contenedor__sobreMi--texto,
+	.contenedor__sobreMi--redes {
+		margin: 0% 0% 0% 2%;
 		width: 50%;
+	}
+
+	.caja__redes {
+		padding: 9% 8%;
+		margin-right: 30px;
+		background-color: var(--third-text-color);
 	}
 
 	.caja__redes p {
 		color: #765d9b;
 		text-align: center;
+		font-size: 20px;
+		font-family: "Poppins", sans-serif;
 	}
 
 	.caja__redesSociales {
 		display: flex;
 		justify-content: center;
+	}
+
+	.caja__redesSociales a {
+		padding: 10px 15px;
 	}
 
 	.contenedor__biohuman {
@@ -983,32 +1160,28 @@ footer {
 		margin: 2%;
 	}
 
-
 	/* -------------------------------------------------------BIOHACKING----------- */
 
-	.foto__BioDos--mobile, .foto__BioDos--tablet {
+	.foto__BioDos--mobile,
+	.foto__BioDos--tablet {
 		display: none;
 	}
 
-	.eBook__tablet, .eBook__mobile {
+	.eBook__tablet,
+	.eBook__mobile {
 		display: none;
 	}
 
 	.biohacking__Parrafo {
-		color: #ffffff;
-		font-family: "Poppins", sans-serif;
-		font-size: 26px;
-		font-weight: bold;
 		position: absolute;
-		width: 40%;
+		width: 50%;
 		left: 16px;
 		top: 80%;
-		margin: 0% 12%;
+		margin: 0% 5%;
 	}
 
 	.contenedor__biohacking {
-		font-family: "Poppins", sans-serif;
-		font-weight: 400;
+		background-color: var(--third-text-color);
 		margin: 5%;
 	}
 
@@ -1027,15 +1200,17 @@ footer {
 	.comoComenzar__num {
 		color: #765d9b;
 		font-weight: 600;
-		font-size: 120px;
+		font-size: 130px;
+		margin: 0;
+		padding: 0;
 	}
 
 	.comoComenzar__tex {
 		text-align: center;
 	}
 
-	.contenedor__biohacking--comoComenzar p {
-		margin: 1%;
+	.contenedor__biohacking--comoComenzar {
+		padding: 3%;
 	}
 
 	.sobreBiohacking {
@@ -1045,11 +1220,12 @@ footer {
 	}
 
 	.foto__BioDos--desktop {
-		width: 60%;
-		margin: 0% 2%;
+		width: 55%;
+		margin: 0% 3%;
+		padding-right: 1%;
 	}
 	.sobreBio__text {
-		width: 35%;
+		width: 34%;
 	}
 
 	.sobreBio__text {
@@ -1059,7 +1235,7 @@ footer {
 
 	.contenedor__eBook--bio {
 		display: flex;
-		margin: 5% 3%;
+		margin: 3% 3%;
 	}
 
 	.eBook__desktop {
@@ -1084,7 +1260,9 @@ footer {
 		left: 20%;
 	}
 
-	.reco__foto--tablet, .reco__foto--mobile, .foto__tips--tablet {
+	.reco__foto--tablet,
+	.reco__foto--mobile,
+	.foto__tips--tablet {
 		display: none;
 	}
 
@@ -1093,7 +1271,39 @@ footer {
 	}
 
 	.card-title {
-		color: #4C5A50 !important;
+		font-family: "Roboto", sans-serif;
+		font-size: 23px;
+		line-height: 28px;
+		color: var(--secondary-text-color);
+		font-weight: 400;
+	}
+
+	.card-text {
+		font-family: "Poppins", sans-serif;
+		font-size: 19px;
+		line-height: 24px;
+		color: var(--secondary-text-color);
+		font-weight: 400;
+	}
+
+	.card-text2 {
+		font-family: "Poppins", sans-serif;
+		font-size: 20px;
+		line-height: 24px;
+		color: var(--primary-bg-btn);
+		font-weight: 500 !important;
+	}
+
+	.card-text3 a {
+		font-family: "Poppins", sans-serif;
+		font-size: 17px;
+		line-height: 18px;
+		color: var(--primary-bg-btn) !important;
+		font-weight: 600;
+	}
+
+	.card-text3 a:hover {
+		color: var(--primary-text-color) !important;
 	}
 
 	.reco__tips {
@@ -1104,6 +1314,7 @@ footer {
 	.reco__tips {
 		display: flex;
 		margin: 5%;
+		background-color: var(--main-bg-color);
 	}
 
 	.icons {
@@ -1143,11 +1354,11 @@ footer {
 	}
 
 	.contenedor__contacto--img {
-		width: 52%;
+		width: 60%;
 	}
 
 	.contenedor__contacto--texto {
-		margin: 3%;
+		margin: 3% 1%;
 		padding-top: 10%;
 	}
 }
