@@ -1156,7 +1156,6 @@ footer {
 
 	.contenedor__soyBio--texto {
 		align-items: center;
-		padding-top: 1.5%;
 		margin: 2%;
 		line-height: 1.7rem;
 	}
@@ -1333,7 +1332,8 @@ footer {
 	}
 
 	.eBook__texto {
-		padding-top: 3%;
+		align-items: center;
+		vertical-align: middle;
 	}
 
 	/*--------------------------------------------------------RECOMENDACIONES*/
