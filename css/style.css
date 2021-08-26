@@ -18,6 +18,24 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 
+/* CARDS */
+.card-block {
+	font-size: 1em;
+	position: relative;
+	margin: 0;
+	padding: 1em;
+	box-shadow: none;
+}
+
+.card {
+	font-size: 1em;
+	overflow: hidden;
+	padding: 5;
+	border: none;
+	margin-top: 20px;
+	border-radius: 1.25rem !important;
+}
+
 /* BOTONES */
 
 .btn-grad {
@@ -31,8 +49,12 @@ body {
 	display: block;
 	border: none;
 	min-height: 56px;
-	min-width: 275px;
+	width: 300px;
 	font-size: 17px;
+}
+
+.btn2 {
+	width: 400px !important;
 }
 
 .btn-grad:hover {
@@ -141,6 +163,15 @@ footer {
 
 /*-------------------------------------------------------------------------------------- MOBILE -----------*/
 @media (max-width: 576px) {
+	.btn-grad {
+		width: 280px !important;
+		padding: 3px;
+	}
+
+	.btn2 a {
+		font-size: 14px;
+		justify-content: center;
+	}
 	/*FOOTER*/
 
 	.pie {
@@ -265,11 +296,19 @@ footer {
 
 	.contenedor__soyBio--texto p {
 		font-size: 1.1rem;
+		color: var(--secondary-text-color);
 	}
 
 	.contenedor__eBook {
 		margin: 10% 3%;
 		font-family: "Poppins", sans-serif;
+	}
+
+	.parrafos,
+	.parrafosPpal,
+	.soyBio__sub {
+		margin-top: 20px;
+		color: var(--secondary-text-color);
 	}
 
 	.contenedor__eBook p {
@@ -305,7 +344,6 @@ footer {
 		color: #765d9b;
 	}
 
-
 	.caja__redesSociales {
 		padding: 5% 1%;
 		display: flex;
@@ -313,11 +351,10 @@ footer {
 	}
 
 	.caja__redesSociales a {
-		
 		padding: 3% 3%;
 	}
 
-	.caja__redesSociales img{
+	.caja__redesSociales img {
 		width: 100%;
 	}
 
@@ -343,7 +380,6 @@ footer {
 	.contenedor__biohuman--texto {
 		margin: 2%;
 	}
-
 
 	/* -------------------------------------------------BIOHACKING------- */
 	.foto__BioDos--desktop,
@@ -443,7 +479,7 @@ footer {
 		display: none;
 	}
 
-	.biohacking__Parrafo--reco  {
+	.biohacking__Parrafo--reco {
 		font-family: "Poppins", sans-serif;
 		font-weight: 600;
 		color: var(--primary-text-color);
@@ -462,7 +498,8 @@ footer {
 		margin: 2%;
 	}
 
-	.caja__img, .caja__tex {
+	.caja__img,
+	.caja__tex {
 		width: 50%;
 	}
 
@@ -502,7 +539,11 @@ footer {
 	/*CONTACTO*/
 
 	.contenedor__contacto--texto {
-		margin: 5%;
+		margin: 20px 15px !important;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.contenedor__contacto--texto p {
@@ -511,24 +552,6 @@ footer {
 		font-weight: 400;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*------------------------------------------------------------------------------------------------ TABLET -----------*/
 @media (min-width: 576px) and (max-width: 992px) {
@@ -540,7 +563,7 @@ footer {
 
 	.pie {
 		display: flex;
-		flex-direction: column;
+		justify-content: space-between;
 		height: auto;
 		align-items: center;
 		padding: 40px 80px;
@@ -620,7 +643,7 @@ footer {
 		font-family: "Roboto", sans-serif;
 		width: 56%;
 		position: absolute;
-		top: 80%;
+		top: 65%;
 		left: 5%;
 	}
 
@@ -706,7 +729,6 @@ footer {
 
 	.contenedor__sobreMi--texto,
 	.contenedor__sobreMi--redes {
-		
 		margin: 0% 2%;
 		width: 45%;
 	}
@@ -727,11 +749,10 @@ footer {
 	}
 
 	.caja__redesSociales a {
-		
 		padding: 8% 3%;
 	}
 
-	.caja__redesSociales img{
+	.caja__redesSociales img {
 		width: 100%;
 	}
 
@@ -776,7 +797,7 @@ footer {
 		text-align: center;
 		width: 70%;
 		left: 16px;
-		top: 100%;
+		top: 80%;
 		margin: 0% 12%;
 	}
 
@@ -795,6 +816,7 @@ footer {
 	}
 	.contenedor__biohacking--texto h2 {
 		text-align: center;
+		margin: 10px !important;
 	}
 
 	.contenedor__comoComenzar {
@@ -862,7 +884,6 @@ footer {
 		line-height: 1.4rem;
 	}
 
-
 	.contenedor__eBook--bio {
 		display: flex;
 		margin: 3%;
@@ -901,8 +922,7 @@ footer {
 		margin: 5% 0%;
 	}
 
-
-	.biohacking__Parrafo--reco  {
+	.biohacking__Parrafo--reco {
 		font-family: "Poppins", sans-serif;
 		font-weight: 600;
 		color: var(--primary-text-color);
@@ -922,7 +942,8 @@ footer {
 		margin: 2%;
 	}
 
-	.caja__img, .caja__tex {
+	.caja__img,
+	.caja__tex {
 		width: 50%;
 	}
 
@@ -971,28 +992,6 @@ footer {
 		margin: 3% 5%;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*---------------------------------------------------------------------------------------------------- D E S K T O P ---*/
 
@@ -1215,6 +1214,10 @@ footer {
 		width: 50%;
 	}
 
+	.contenedor__soyBio--texto {
+		margin: auto 40px !important;
+	}
+
 	.caja__redes {
 		padding: 9% 8%;
 		margin-right: 30px;
@@ -1332,22 +1335,24 @@ footer {
 	}
 
 	.eBook__texto {
-		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: left;
 		vertical-align: middle;
 	}
 
 	/*--------------------------------------------------------RECOMENDACIONES*/
 
 	.reco__introParrafo {
-		color: #4c5a50;
 		font-family: "Poppins", sans-serif;
-		font-size: 35px;
+		font-size: 40px;
 		font-weight: 600;
 		text-align: center;
 		width: 60%;
 		position: absolute;
-		top: 70%;
-		left: 20%;
+		top: 90%;
+		left: 20%
 	}
 
 	.reco__foto--tablet,
@@ -1357,10 +1362,12 @@ footer {
 	}
 
 	.contenedor__cards {
+		margin-top: 30px;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		margin: 3%;
+		margin-top: 100px;
 	}
 
 	.contenedor__cards--caja {
@@ -1369,7 +1376,8 @@ footer {
 		margin: 2%;
 	}
 
-	.caja__img, .caja__tex {
+	.caja__img,
+	.caja__tex {
 		width: 50%;
 	}
 
@@ -1420,7 +1428,8 @@ footer {
 
 	.reco__tips {
 		display: flex;
-		margin: 5%;
+		width: 90%;
+		margin: 60px auto;
 		background-color: var(--main-bg-color);
 	}
 
@@ -1465,7 +1474,11 @@ footer {
 	}
 
 	.contenedor__contacto--texto {
-		margin: 3% 1%;
-		padding-top: 10%;
+		width: 40%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: left;
+		margin: 20px;
 	}
 }

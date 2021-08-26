@@ -25,6 +25,9 @@
 	position: absolute;
 	border-radius: 50%;
 	top: calc(50% - 20px);
+	background-color: #887b9c !important;
+	color: white !important;
+	font-weight: 400 !important;
 }
 .MultiCarousel .leftLst {
 	left: 0;
@@ -41,9 +44,4 @@
 	background: rgb(255, 255, 255);
 	color: #765d9b;
 	font-weight: 800;
-}
-
-.btn {
-	background-color: #765d9b;
-	color: white;
 }
